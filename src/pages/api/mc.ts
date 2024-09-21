@@ -9,17 +9,17 @@ export const GET: APIRoute = async ({ params, request }) => {
     });
 
     return new Response(JSON.stringify(state), {
-        status: 200,
-        headers: {
-            'Content-Type': 'application/json',
-        },
+            status: 200,
+            headers: {
+                'Content-Type': 'application/json',
+            },
         });
     } catch (error) {
         return new Response(JSON.stringify({ error: `Server is offline, error: ${error}` }), {
-        status: 500,
-        headers: {
-            'Content-Type': 'application/json',
-        },
+            status: 500,
+            headers: {
+                'Content-Type': 'application/json',
+            },
         });
     }
 };
