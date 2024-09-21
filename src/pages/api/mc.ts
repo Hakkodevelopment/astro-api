@@ -1,7 +1,7 @@
 import type { APIRoute } from 'astro';
 import { GameDig } from 'gamedig';
 
-export const GET: APIRoute = async ({ params, request }) => {
+export const GET: APIRoute = async () => {
     try {
     const state = await GameDig.query({
         type: 'minecraft',

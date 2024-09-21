@@ -33,6 +33,9 @@ importers:
         specifier: ^5.6.2
         version: 5.6.2
     devDependencies:
+      '@types/gamedig':
+        specifier: ^5.0.3
+        version: 5.0.3
       daisyui:
         specifier: ^4.12.10
         version: 4.12.10(postcss@8.4.47)
@@ -832,6 +835,9 @@ packages:
 
   '@types/estree@1.0.6':
     resolution: {integrity: sha512-AYnb1nQyY49te+VRAVgmzfcgjYS91mY5P0TKUDCLEM+gNnA+3T6rWITXRLYCpahpqSQbN5cE+gHpnPyXjHWxcw==}
+
+  '@types/gamedig@5.0.3':
+    resolution: {integrity: sha512-VLrOVRf72wVE6P0DhFtRVodiONwL51uojn6dNpP/Ks/Vdm3CDH6dZTAw74WmCDLuyvpytNy8auKzlTKfBlO8jg==}
 
   '@types/hast@3.0.4':
     resolution: {integrity: sha512-WPs+bbQw5aCj+x6laNGWLH3wviHtoCv/P3+otBhbOhJgG8qtpdAMlTCxLtsTWA7LH1Oh/bFCHsBn0TPS5m30EQ==}
@@ -3484,6 +3490,8 @@ snapshots:
   '@types/estree@1.0.5': {}
 
   '@types/estree@1.0.6': {}
+
+  '@types/gamedig@5.0.3': {}
 
   '@types/hast@3.0.4':
     dependencies:

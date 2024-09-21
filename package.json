@@ -20,6 +20,7 @@
     "typescript": "^5.6.2"
   },
   "devDependencies": {
+    "@types/gamedig": "^5.0.3",
     "daisyui": "^4.12.10"
   }
 }

@@ -2,7 +2,7 @@ import type { APIRoute } from 'astro';
 import axios from 'axios';
 
 export const GET: APIRoute = async ({ request }) => {
-    // const source = request.headers.get('x-forwarded-for') || request.headers.get('x-real-ip');
+    const source = request.headers.get('x-forwarded-for') || request.headers.get('x-real-ip');
     const startChi = Date.now();
     try {
         await axios.get("https://chi-game-1.prismservers.net:8443/");
@@ -23,6 +23,7 @@ export const GET: APIRoute = async ({ request }) => {
         JSON.stringify({
             latencyChi,
             latencyLon,
+            source,
         }), {
             status: 200,
             headers: {
